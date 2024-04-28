@@ -67,6 +67,7 @@ def display_transition():
     while not done:
         frame = put_agent(frame.copy(), initial_state)  # Always show the agent at the initial state
         cv2.imshow("Cliff World", frame)
+        cv2.waitKey(3000)
         action = cliffEnv.action_space.sample()
         st.write("Now the agent took ->>>>", action_to_direction(action))  # Print the direction
         step_result = cliffEnv.step(action)

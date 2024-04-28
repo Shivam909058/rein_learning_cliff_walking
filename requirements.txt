@@ -1,6 +1,4 @@
 gym
 pandas
 numpy
-matplotlib
-cv2
 opencv-python
